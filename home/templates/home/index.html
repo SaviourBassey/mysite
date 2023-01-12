@@ -18,11 +18,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Saviloper | A Professional Software Developer" />
     <meta name="twitter:description" content="Experienced software developer with a focus on tutoring, mobile app development, and website development. Available for both full-time jobs and freelancing work. View my portfolio and get in touch with me for more information." />
-    <meta name="twitter:image" content="{% static 'img/img-mobile.jpg' %}" />
+    <meta name="twitter:image" content="{% static 'img/mobile_img.jpg' %}" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="icon" href="{% static 'img/img-mobile.jpg' %}" type="image/x-icon" />
+    <link rel="icon" href="{% static 'img/mobile_img.jpg' %}" type="image/x-icon" />
 
     <!-- Template Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -66,6 +66,19 @@
             width: 100%; 
             font-size:1.5rem;
             }
+        }
+
+        .home .bg {
+            background-image: url({% static 'img/desktop_img.jpg' %});
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: calc(100vh - 80px);
+            z-index: 111;
+            border-radius: 30px;
+            left: 40px;
+            top: 40px;
+            box-shadow: 0 0 7px rgba(0,0,0,.9);
         }
     </style>
 </head>
@@ -174,7 +187,7 @@
         <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
         <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
             <div>
-                <img src="{% static 'img/img-mobile.jpg' %}" class="img-fluid main-img-mobile d-sm-block d-lg-none" alt="my picture" />
+                <img src="{% static 'img/mobile_img.jpg' %}" class="img-fluid main-img-mobile d-sm-block d-lg-none" alt="my picture" />
                 <h1 class="text-uppercase poppins-font" id="header-title">I'm Saviour Bassey.<span>Software Developer</span></h1>
                 <!-- <p class="open-sans-font">Hi! I'm a Nigerian-born software developer who has worked with several programming languages, including Java, JavaScript, Python, and C++. I enjoy solving complex problems and developing user-friendly applications. I always strive to deliver high-quality results, whether I'm creating new software from scratch or improving existing ones.</p> -->
                 <p class="open-sans-font">Hi! I'm a Nigerian-born software developer with a strong desire to provide my clients with innovative and efficient solutions. I am highly motivated, detail-oriented, and possess excellent problem-solving skills. I always strive to deliver high-quality results, whether I'm creating new software from scratch or improving existing ones.</p>
