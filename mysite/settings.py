@@ -26,12 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production! https://web-production-8d52.up.railway.app/
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', "web-production-8d52.up.railway.app", "saviloper.com"]
+ALLOWED_HOSTS = ['127.0.0.1', "web-production-8d52.up.railway.app", "www.saviloper.com"]
 
-CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://web-production-8d52.up.railway.app", "https://saviloper.com"]
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://web-production-8d52.up.railway.app", "https://www.saviloper.com"]
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
